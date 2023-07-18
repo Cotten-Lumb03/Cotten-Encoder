@@ -11,3 +11,25 @@ def encode(user_password):
             num = str(int(num) + 3)
             if len(num) == 2:
                 num = num[-1]
+        password_output += num
+    print("Your password has been encoded and stored!")
+    return password_output
+
+
+def decode(encoded_password):
+    pass
+
+
+def main():
+    while True:
+        main_menu()
+        menu_option = int(input("Please enter an option:"))
+
+        if menu_option == 1:
+            user_password = input("Please enter your password to encode:")
+            print(encode(user_password))
+        elif menu_option == 2:
+            # decode()
+            pass
+        elif menu_option == 3:
+            break
