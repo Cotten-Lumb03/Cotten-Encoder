@@ -1,3 +1,4 @@
+#Cotten Lumb
 def main_menu():
     print("Menu\n-------------\n1. Encode\n2. Decode\n3, Quit")
 
@@ -18,12 +19,23 @@ def encode(user_password):
 
 def decode(encoded_password):
     decoded_password = ""
-    for num in encoded_password:
-        num = str(int(num) - 3)
+    for num in encoded_password: 
+        if num == '0': # keeps num within 0-9
+            num = str(7)
+        elif num == '1':
+            num = str(8)
+        elif num == '2':
+            num = str(9)
+        else:
+            num = str(int(num) - 3)
         decoded_password += num
     print(f"The encoded password is {encoded_password} and the original password is {decoded_password}")
+<<<<<<< HEAD
     pass
 
+=======
+    return encoded_password
+>>>>>>> a96d28732e98f3116a81aa10f9a5d4f4a546f27b
 
 def main():
     while True:
@@ -32,8 +44,12 @@ def main():
 
         if menu_option == 1:
             user_password = input("Please enter your password to encode:")
+<<<<<<< HEAD
             print(encode(user_password))
             print("Your password has been encoded and stored!")
+=======
+            encode(user_password)
+>>>>>>> a96d28732e98f3116a81aa10f9a5d4f4a546f27b
         elif menu_option == 2:
             decode(encode(user_password))
         elif menu_option == 3:
