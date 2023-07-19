@@ -33,3 +33,8 @@ def main():
             pass
         elif menu_option == 3:
             break
+
+
+
+if __name__ == '__main__':
+    main()
