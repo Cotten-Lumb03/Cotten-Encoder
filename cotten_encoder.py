@@ -12,8 +12,8 @@ def encode(user_password):
             if len(num) == 2:
                 num = num[-1]
         password_output += num
-    print("Your password has been encoded and stored!")
     return password_output
+    pass
 
 
 def decode(encoded_password):
@@ -22,6 +22,7 @@ def decode(encoded_password):
         num = str(int(num) - 3)
         decoded_password += num
     print(f"The encoded password is {encoded_password} and the original password is {decoded_password}")
+    pass
 
 
 def main():
@@ -32,6 +33,7 @@ def main():
         if menu_option == 1:
             user_password = input("Please enter your password to encode:")
             print(encode(user_password))
+            print("Your password has been encoded and stored!")
         elif menu_option == 2:
             decode(encode(user_password))
         elif menu_option == 3:
