@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80076872-c6ea-464c-867e-0fa537b88756" name="Changes" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+=======
+>>>>>>> 7baae6f2a895ed994162e6b67fe6760a1dfe9e93
       <change beforePath="$PROJECT_DIR$/cotten_encoder.py" beforeDir="false" afterPath="$PROJECT_DIR$/cotten_encoder.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

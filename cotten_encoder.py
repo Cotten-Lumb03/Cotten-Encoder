@@ -17,7 +17,11 @@ def encode(user_password):
 
 
 def decode(encoded_password):
-    pass
+    decoded_password = ""
+    for num in encoded_password:
+        num = str(int(num) - 3)
+        decoded_password += num
+    print(f"The encoded password is {encoded_password} and the original password is {decoded_password}")
 
 
 def main():
@@ -26,15 +30,14 @@ def main():
         menu_option = int(input("Please enter an option: "))
 
         if menu_option == 1:
-            user_password = input("Please enter your password to encode: ")
+            user_password = input("Please enter your password to encode:")
             print(encode(user_password))
         elif menu_option == 2:
-            decode(encoded_password)
-            pass
+            decode(encode(user_password))
         elif menu_option == 3:
             break
 
 
-
 if __name__ == '__main__':
     main()
+
