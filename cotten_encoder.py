@@ -33,12 +33,9 @@ def main():
             user_password = input("Please enter your password to encode:")
             print(encode(user_password))
         elif menu_option == 2:
-            decode(encoded_password)
-            pass
-
+            decode(encode(user_password))
         elif menu_option == 3:
             break
-
 
 
 if __name__ == '__main__':
